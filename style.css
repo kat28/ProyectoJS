@@ -686,7 +686,7 @@ h2 {
 .product-item .product-title {
     padding: 15px;
     text-align: center;
-    background: #D0E6E4;
+    background: #000000;
     transition: all .3s;
 }
 
@@ -702,7 +702,7 @@ h2 {
 
 .product-item .product-title a {
     margin-bottom: 5px;
-    color: #000000;
+    color: #ffffff;
     font-size: 18px;
 }
 
@@ -730,8 +730,6 @@ h2 {
 .product-item .product-image {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    height: 250px;
 }
 
 .product-item .product-image a {
