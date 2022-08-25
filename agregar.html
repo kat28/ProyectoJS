@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>E Store - eCommerce HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="eCommerce HTML Template Free Download" name="keywords">
+    <meta content="eCommerce HTML Template Free Download" name="description">
+
+    <!-- Favicon
+        <link href="img/favicon.ico" rel="icon">
+        -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top bar Start -->
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="mx-auto">
+                    <a class="topbar-link mr-4 d-none d-md-inline-block ng-star-inserted" rel="noreferrer"
+                        target="_blank" href="https://facebook.com/Karamawicr">
+                        <i class="fab fa-facebook"></i>Detalles Silvana </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top bar End -->
+
+    <!-- Nav Bar Start -->
+    <div class="nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <a href="/index.html" class="nav-item nav-link">Inicio</a>
+                        <a href="product-list.html" class="nav-item nav-link">Productos</a>
+                        <a href="cart.html" class="nav-item nav-link ">Carrito</a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usuario</a>
+                            <div class="dropdown-menu">
+                                <a href="login.html" class="dropdown-item">Login</a>
+                                <a href="agregar.html" class="dropdown-item active">Mant. Producto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <!-- Bottom Bar Start -->
+    <div class="bottom-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-4"></div>
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bottom Bar End -->
+
+    <!-- Breadcrumb Start -->
+    <div class="breadcrumb-wrap">
+        <div class="container-fluid">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="/product-list.html">Productos</a></li>
+                <li class="breadcrumb-item active">Listado</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="cart-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="cart-page-inner">
+                        <div class="table-responsive">
+
+                            <table id="tblDatos" class="table table-striped">
+                                <thead>
+                                    <th>Imagen</th>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Moneda</th>
+                                    <th>Editar</th>
+                                    <th>Eliminar</th>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cart-page-inner">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                            </div>
+                            <div class="col-md-12">
+                                <div class="cart-summary">
+
+                                    <form id="form">
+
+                                        <div class="form-group">
+                                            <input type="text" name="txtcategoria" id="img" class="form-control"
+                                                placeholder="categoria">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="txtproducto" id="producto" class="form-control"
+                                                placeholder="Nombre del Articulo">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="txtprecio" id="precio" class="form-control"
+                                                placeholder="Precio">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="txtmoneda" id="moneda" class="form-control"
+                                                placeholder="Moneda">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="txtimg" id="img" class="form-control"
+                                                placeholder="img/nombre de la imagen">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="txtestrellas" id="img" class="form-control"
+                                                placeholder="calificacion">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="txtdescripcion" id="img" class="form-control"
+                                                placeholder="descripción producto">
+                                        </div>
+
+                                        <button id="btnGuardar" class="btn btn-primary">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Footer Bottom Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>Copyright &copy; <a href="https://htmlcodex.com">HTML Codex</a>All Rights Reserved</p>
+                </div>
+
+                <div class="col-md-6 template-by">
+                    <p>Template By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom End -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+
+    <!-- Template Javascript -->
+
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Conexion Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDXbQwRti9nlMtyr_pPq8FnHC8vJtnj06M",
+            authDomain: "proyectojs-9e6c1.firebaseapp.com",
+            projectId: "proyectojs-9e6c1",
+            storageBucket: "proyectojs-9e6c1.appspot.com",
+            messagingSenderId: "794477091958",
+            appId: "1:794477091958:web:78e8dcd0995a0517081357",
+            measurementId: "G-3J3XJ8VRWV"
+        };
+
+
+
+
+        //INICIALIZA APLICACION
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/toast.min.js"></script>
+    <script src="js/agregar.js"></script>
+
+</body>
+
+</html>
